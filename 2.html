@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home2</title>
+</head>
+<body>
+    <h1>Урок "Формы": теги и их атрибуты.</h1>
+    <p><b>Расскажите немного о себе..</b></p>
+    <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+    <form action="#" method="post">
+        <fieldset>
+            <legend><b>Коротко о себе</b></legend>
+            <ul>
+                <li>
+                    <label for="name_in">Имя:</label><input type="text" name="name" id="name_in">
+                </li>
+                <li>
+                    <label for="fam">Фамилия:</label><input type="text" name="fam" id="fam">
+                </li>
+                <li>
+                    <span>Пол:</span>
+                    <ul>
+                        <li>
+                            <input type="radio" name="male" id="man" checked><label for="man">Мужской</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="male" id="woman"><label for="woman">Женский</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="age">Возраст:</label><input type="text" name="age" id="age" size="4"><span>лет</span>
+                </li>
+                </ul>
+        </fieldset>
+        <fieldset>
+            <legend><b>Подробнее о себе</b></legend>
+            <ul>
+                <li>
+                    <input type="radio" name="male_1" id="man_1" checked><label for="man">Молодой человек</label>
+                </li>
+                <li>
+                    <input type="radio" name="male_1" id="woman_1"><label for="woman">Девушка</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="text" name="data_r" id="data_r"><label for="data_r">Дата рождения</label>
+                </li>
+                <li>
+                    <input type="text" name="sem_pol" id="sem_pol"><label for="Sem_pol">Cемейное положение</label>
+                </li>
+                <li>
+                    <input type="text" name="sotc_s" id="sotc_s"><label for="sotc_s">Социальный статус</label>
+                </li>
+                <li>
+                    <input type="text" name="mest_ju" id="mest_ju"><label for="mest_ju">Местожительства</label>
+                </li>
+                <li>
+                    <p><b>Что вы обычно делаете на выходных:</b></p>
+                <ul>
+                    <li><input type="checkbox" name="del" id="del1"><label for="del1">Сплю</label></li>
+                    <li><input type="checkbox" name="del" id="del2"><label for="del2">Гуляю с друзьями</label></li>
+                    <li><input type="checkbox" name="del" id="del3"><label for="del3">Играю в игры</label></li>
+                    <li><input type="checkbox" name="del" id="del4"><label for="del4">Хожу на рыбалку</label></li>
+                </ul>
+                </li>
+                <li>
+                    <p><b>Рассказать о формах в книге, посвященной HTML</b></p>
+                    <select name="select">
+                        <option value="1">Site firequency</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </li>
+                <li>
+                    <p><b>Сколько книг вы прочитали за свою жизнь</b></p>
+                    <ul>
+                        <li><input type="radio" name="book" id="book1"><label for="book1">0-10</label></li>
+                        <li><input type="radio" name="book" id="book2"><label for="book2">11-20</label></li>
+                        <li><input type="radio" name="book" id="book3"><label for="book3">21-50</label></li>
+                        <li><input type="radio" name="book" id="book4"><label for="book4">51+</label></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="coment">Ваши коментарии</label> <br>
+                    <textarea name="coment" id="coment"></textarea>
+                </li>
+                <li>
+                    <select name="select_2" size="3">
+                        <option value="1_1">Первая позиция</option>
+                        <option value="1_2">Вторая позиция</option>
+                        <option value="1_3">Третья позиция</option>
+                    </select>
+                </li>
+            </ul>
+            </fieldset>
+        <fieldset>
+            <legend><b>И в заключение</b></legend>
+            <ul>
+                <li><input type="text" name="text" placeholder="Это поле было введено до вас" value=""></li>
+                <li><label for="mail">Email:</label><input type="text" name="mail" id="mail"></li>
+                <li>
+                    <p><b>Хотите подписаться на самую модную рассылку спама?</b></p>
+                    <p><i>Выберите категории</i></p>
+                    <ul>
+                        <li><input type="checkbox" name="cat" id="cat1"><label for="cat1">Оборудывание</label></li>
+                        <li><input type="checkbox" name="cat" id="cat2"><label for="cat2">Как приготовить обеды</label></li>
+                        <li><input type="checkbox" name="cat" id="cat3"><label for="cat3">Заработай миллион за два дня!</label></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><b>Насколько сложная задача</b></p>
+                    <ul>
+                        <li><input type="radio" name="ask" id="ask1"><label for="ask1">Сщвсем нет</label></li>
+                        <li><input type="radio" name="ask" id="ask2"><label for="ask2">Еле справились</label></li>
+                        <li><input type="radio" name="ask" id="ask3"><label for="ask3">Так себе</label></li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="отправить">
+        </fieldset>
+    </form>
+</body>
+</html>
+
